@@ -40,7 +40,6 @@ class MainClass extends PluginBase implements Listener{
 		$message = $event->getMessage();
 		$flitered_message = str_ireplace($this->fliter,"***",$message);
 		if($flitered_message !== $message){
-			$event->setFlitered(true);
 			$event->setMessage($flitered_message);
 		}
 	}
